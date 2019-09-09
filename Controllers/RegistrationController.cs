@@ -260,7 +260,7 @@ namespace TrainingAssessmentProject.Controllers
 
             var fromEmail = new MailAddress("soumyasiddhartha18@gmail.com", "Siddhartha");
             var toEmail = new MailAddress(emailID);
-            var fromEmailPassword = "Soumyasiddhartha@18"; // Replace with actual password
+            var fromEmailPassword = "***********"; // Replace with actual password
 
             string subject = "";
             string body = "";
