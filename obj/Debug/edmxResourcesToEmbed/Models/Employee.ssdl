@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TrainingAssessmentModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblEmployee">
+    <Key>
+      <PropertyRef Name="EmpId" />
+    </Key>
+    <Property Name="EmpId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmpName" Type="varchar" MaxLength="50" />
+    <Property Name="Domain" Type="varchar" MaxLength="50" />
+    <Property Name="EmpEmailId" Type="varchar" MaxLength="320" />
+    <Property Name="Mobile No" Type="bigint" />
+    <Property Name="EmpPhoto" Type="image" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="Activation" Type="uniqueidentifier" />
+    <Property Name="VerifyEmail" Type="bit" />
+    <Property Name="ReferenceId" Type="uniqueidentifier" />
+    <Property Name="ResetPasswordCode" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityContainer Name="TrainingAssessmentModelStoreContainer">
+    <EntitySet Name="tblEmployee" EntityType="Self.tblEmployee" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
